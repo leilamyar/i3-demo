@@ -1,0 +1,133 @@
+/* GENERAL STYLING : 
+    - wildcard *
+    - body
+    - class "centered"
+    - "a" tags
+*/
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.centered {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* unvisited link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* visited link */
+a:visited {
+  color: darkviolet;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+nav {
+  /* container in order to encapsulate nav & search bar (which should be next to each other).
+  If not set, h1's height being larger than div header, nav & search bar goes next to h1 & under div header. */
+  width: 100%;
+  float:left;
+  border: 5px solid black;
+}
+
+/* 4th and 5th float:left I added */
+#nav-links {
+  width: 70%;
+  float: left;
+  border: 5px solid gray;
+}
+
+#search-bar {
+  width: 30%;
+  float: right;
+  border: 5px solid gold;
+}
+
+/* Last 2 elem I added float:left to */
+header{
+    width:100%;
+    float:left;
+    height:50px;
+    border: 5px solid blue;
+  }
+
+header h1
+{
+  width: 20%;
+  display: block;
+  height: 100%;
+  float: left;
+  border: 5px solid violet;
+}
+header div{
+  width: 80%;
+  height: 100%;
+  float: left;
+  border: 5px solid greenyellow;
+}
+
+/* 3rd float:left I added */
+aside {
+  width: 30%;
+  float: left;
+  border: 5px solid aqua;
+}
+
+#categ-menu {
+  width: 100%;
+  border: 5px solid chartreuse;
+}
+
+/* 2nd float:left I added */
+section {
+  width: 70%;
+  float: left;
+  border: 5px solid black;
+}
+
+#container-articles {
+  width: 100%;
+  /* border: 5px solid darkorchid; */
+  /* REMOVED because contains only FLOAT elem ("article" elem) ---> if border is set, container is shown as an empty box, that is as a line 10px thick + sets margin around container (w/o color) 
+  see Jon Duckett's book HTML&CSS - design and build websites, p.373 */
+}
+
+.margin-container {
+  /* This container mocks margin around article elements, so that it's taken into account by the box-sizing:border-box declaration */
+  padding: 5px;
+  width: 50%;
+  float: left;
+}
+
+/* 1st float:left I added (after step_2 - add width everywhere */
+article {
+  /* width: 50%;
+  float: left; */
+  /* REMOVED from here and set into class "margin-container" */
+  border: 5px solid firebrick;
+}
